@@ -10,8 +10,9 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
+RUN ls -l /app
+RUN ls -l /app/public
 
-RUN ls /app/public
 
 # Copy the rest of the application
 COPY . .
