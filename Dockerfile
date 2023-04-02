@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 # Install required packages
 RUN apt-get update && \
-    apt-get install -y nodejs npm
+    apt-get install -y nodejs npm --no-install-recommends nodejs npm
 
 # Set working directory
 WORKDIR /app
